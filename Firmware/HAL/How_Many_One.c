@@ -24,21 +24,23 @@ static int Number_Of_One;         // Hold the number of one on the binary number
 /**************************************************************/
 /*                         PRIVATE FUNCTIONS                  */
 /**************************************************************/
-static void Reset(void)
+/**************************************************************/
+/*                         PUBLIC FUNCTIONS                   */
+/**************************************************************/
+
+void Reset(void)
 {
 	Old_Number_Read=0;
 	New_Character_Read='0';
 	Number_Of_One=0;
 }
 
-/**************************************************************/
-/*                         PUBLIC FUNCTIONS                   */
-/**************************************************************/
-int main(void)
-{
+
+void How_Many_One(const char* file)
+{ 
    FILE *fp;                
    Reset();                                 
-   fp = fopen("file.txt","r");         // "r" => open a file for reading. The file must exist //FILE *fopen(const char *filename, const char *mode)
+   fp = fopen(file,"r");               // "r" => open a file for reading. The file must exist //FILE *fopen(const char *filename, const char *mode)
    while(1)
    {
       New_Character_Read= fgetc(fp);   // Get the char
@@ -65,7 +67,6 @@ int main(void)
       }
    }
    fclose(fp);
-   return (0);
 }
 
 
