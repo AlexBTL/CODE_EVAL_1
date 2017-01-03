@@ -12,7 +12,7 @@
 /*                        DEFINE & TYPEDEF                    */
 /**************************************************************/
 
-#define filename "file.txt";
+#define filename "file.txt"
 
 /**************************************************************/
 /*                        PUBLIC FUNCTIONS                    */
