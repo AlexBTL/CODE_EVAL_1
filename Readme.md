@@ -8,4 +8,4 @@ Description:
 Compilation :
 
 -  Make
-- ./How_Many_One
+- ./HowManyOne file.txt
