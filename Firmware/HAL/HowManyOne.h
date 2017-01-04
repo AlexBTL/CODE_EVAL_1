@@ -5,24 +5,28 @@
  * Created on January 03, 2016, 11:27 AM
  */
 
-#ifndef HOW_MANY_ONE_H
-#define	HOW_MANY_ONE_H
+#ifndef HOWMANYONE_H
+#define	HOWMANYONE_H
+
+#include <stdio.h>
+#include <stdlib.h>
 
 /**************************************************************/
 /*                        DEFINE & TYPEDEF                    */
 /**************************************************************/
 
-#define filename "file.txt"
-
 /**************************************************************/
 /*                        PUBLIC FUNCTIONS                    */
 /**************************************************************/
 void Reset(void);
-void How_Many_One(const char* file);
+void HowManyOne(FILE *fp);
+bool EmptyLine(void);
+void CountOne(void);
+void AddNumber(void);
 
 /**************************************************************/
 /*                        PRIVATE FUNCTIONS                   */
 /**************************************************************/
 
 
-#endif	/* HOW_MANY_ONE_H */
+#endif	/* HOWMANYONE_H */
