@@ -8,4 +8,4 @@ Description:
 Compilation :
 
 -  Make
-- ./HowManyOne file.txt
+- ./NumberOfOneBinary file.txt

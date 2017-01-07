@@ -1,3 +1,6 @@
-HowManyOne.o
-HowManyOne.exe
+CheckValues.o
+Memory.o
+Conversion.o
+NumberOfOneBinary.o
+NumberOfOneBinary.exe
 Main.o

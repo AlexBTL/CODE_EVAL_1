@@ -1,32 +1,37 @@
 /* 
- * File:   How_Many_One.h
+ * File:   NumberOfOneBinary.h
  * Author: abutel
  *
- * Created on January 03, 2016, 11:27 AM
+ * Created on January 03, 2016, 02:04 PM
  */
 
-#ifndef HOWMANYONE_H
-#define	HOWMANYONE_H
-
-#include <stdio.h>
-#include <stdlib.h>
+#ifndef NUMBEROFONEBINARY_H
+#define	NUMBEROFONEBINARY_H
 
 /**************************************************************/
 /*                        DEFINE & TYPEDEF                    */
 /**************************************************************/
 
+#define NB_ARGUMENTS_WANTED 2
+#define ALLOCATION_STEP 1
+#define SIZE_BUFF_READ 2
+
+typedef struct BufferInt_t
+{
+	int *pInt;
+	int *pRead;
+	int indice;
+	bool notOnlyLetter;	
+} bufferInt_s;
+
 /**************************************************************/
 /*                        PUBLIC FUNCTIONS                    */
 /**************************************************************/
-void Reset(void);
-void HowManyOne(FILE *fp);
-bool EmptyLine(void);
-void CountOne(void);
-void AddNumber(void);
+
+void DecToBin(FILE *fp);
 
 /**************************************************************/
 /*                        PRIVATE FUNCTIONS                   */
 /**************************************************************/
 
-
-#endif	/* HOWMANYONE_H */
+#endif	/* NUMBEROFONEBINARY */
